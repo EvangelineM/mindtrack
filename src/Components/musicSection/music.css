@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  background-color: #d8dede;
+  color: #261C14;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.head {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.music-player {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.logout-button {
+  margin-left: 30px;
+  margin-top: 20px;
+  background-color: #261C14;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 1.2rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.logout-button:hover {
+  background-color: #1F1410;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Center the items vertically */
+  margin-top: 20px;
+  /* Add some top margin for spacing */
+}
+
+.search-input {
+  padding: 10px;
+  border: 1px solid #261C14;
+  background-color: #F8E8D6;
+  color: #261C14;
+  margin-right: 10px;
+  width: 250px;
+  /* Set a fixed width to make the search bar smaller */
+}
+
+.search-select {
+  background-color: #261C14;
+  color: white;
+  border: none;
+  border-radius: 1.2rem;
+
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 10px 15px;
+  /* Add padding for better appearance */
+  margin-right: 10px;
+  /* Add margin for spacing */
+}
+
+.search-select option {
+  background-color: #F5D1A3;
+  /* Background color for dropdown options */
+  color: #261C14;
+  /* Text color for dropdown options */
+}
+
+.search-select {
+  background-color: #261C14;
+  color: white;
+  border: none;
+  border-radius: 1.2rem;
+  /* Same as the button */
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 10px 30px 10px 15px;
+  /* Top, Right, Bottom, Left padding */
+  margin-right: 10px;
+  /* Space between input and select */
+  appearance: none;
+  /* Remove default arrow */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ffffff"><path d="M7 10l5 5 5-5z"/></svg>');
+  /* Custom arrow */
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  /* Positioning the arrow */
+  background-size: 12px;
+  /* Size of the arrow */
+}
+
+.search-button {
+  background-color: #261C14;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  /* Adjusted padding for a more compact button */
+  border-radius: 1.2rem;
+  /* Same radius as the select */
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Center items vertically */
+  margin-top: 25px;
+  /* Added margin for spacing */
+}
+
+.search-form .search-input {
+  margin-top: 1rem;
+  width: 50rem;
+  border-radius: 1.2rem;
+}
+
+.search-button:hover {
+  background-color: #1F1410;
+}
+
+.results-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.artist-card,
+.playlist-card {
+  background: linear-gradient(135deg, #F8E8D6, #F1D9B5);
+  border-radius: 15px;
+  margin: 10px;
+  padding: 20px;
+  /* Adjust padding to avoid overflow */
+  height: auto;
+  /* Change height to auto to let it expand */
+  min-width: 200px;
+  /* Set a minimum width */
+  max-width: 200px;
+  /* Keep maximum width */
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  overflow: hidden;
+  /* Prevent text overflow */
+  display: flex;
+  /* Use flexbox to center content */
+  flex-direction: column;
+  /* Stack content vertically */
+  justify-content: space-between;
+  /* Space out items */
+}
+
+.artist-name,
+.playlist-name {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  /* Make font size responsive */
+  color: #261C14;
+  overflow: hidden;
+  /* Prevent overflow */
+  text-overflow: ellipsis;
+  /* Add ellipsis for overflow text */
+  white-space: nowrap;
+  /* Prevent text wrapping */
+}
+
+.artist-image,
+.playlist-image {
+  width: 100%;
+  height: auto;
+  /* Set height to auto for responsive images */
+  max-height: 150px;
+  /* Maintain a max height */
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.no-image {
+  width: 100%;
+  height: 150px;
+  background-color: #ddd;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.artist-name,
+.playlist-name {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #261C14;
+}
+
+.audio-player {
+  margin-top: 20px;
+}
+
+.audio-controller {
+  width: 40rem;
+}
+
+.login-prompt {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-link {
+  color: #261C14;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.login-link:hover {
+  text-decoration: none;
+}

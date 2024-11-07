@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Pong Game</h1>
+        <div class="score-board">
+            <span id="player-a-score">Player A: 0</span>
+            <span id="player-b-score">Player B: 0</span>
+        </div>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div class="controls">
+            <button id="start-game">Start Game</button>
+            <button id="reset-game">Reset Game</button>
+            <button id="end-game">End Game</button>
+        </div>
+        <div id="difficulty-select">
+            <label for="difficulty">Select Difficulty:</label>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="normal" selected>Normal</option>
+                <option value="difficult">Difficult</option>
+            </select>
+        </div>
+        <div id="game-guide">
+            <p>Welcome to Pong!</p>
+            <p>Objective: Score points by getting the ball past your opponent’s paddle.</p>
+            <p>Controls:</p>
+            <p><strong>Player A (You):</strong></p>
+            <p>Move Paddle Up: Press 'W'</p>
+            <p>Move Paddle Down: Press 'S'</p>
+            <p><strong>Player B (AI):</strong> The AI controls the right paddle automatically.</p>
+            <p>Difficulty Levels:</p>
+            <ul>
+                <li>Easy: Slower ball and AI.</li>
+                <li>Normal: Medium speed for ball and AI.</li>
+                <li>Difficult: Faster ball and AI.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

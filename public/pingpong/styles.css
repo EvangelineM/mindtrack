@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1300px;
+}
+
+.game-container {
+    text-align: center;
+    width: 900px;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.score-board {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#gameCanvas {
+    background-color: green;
+    border: 2px solid white;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #888;
+}
+
+#difficulty-select {
+    margin-top: 20px;
+}
+
+#game-guide {
+    margin-top: 20px;
+    font-size: 1.1em;
+    background-color: #666;
+    padding: 20px;
+    border-radius: 10px;
+}
