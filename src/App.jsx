@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/navbar";
+import Navbar from "./Components/navbar";
 import Hero from "./Components/landingPage/hero";
 import FeaturesSection from "./Components/landingPage/features";
 import HowItWorks from "./Components/landingPage/how";
 import Home from "./Components/homePage/home"; // Import the User Profile component
 import Footer from "./Components/footer";
-import Games from "./components/gamesSection/games";
+import Games from "./Components/gamesSection/games";
 import Journal from "./Components/journalSection/journal";
 import JitsiMeetComponent from "./Components/JitsiMeetComponent";
 import MusicPlayer from "./Components/musicSection/music";
