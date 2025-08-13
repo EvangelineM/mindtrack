@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./Components/navbar";
+import Navbar from "./Components/navbar.jsx";
 import Hero from "./Components/landingPage/hero";
 import FeaturesSection from "./Components/landingPage/features";
 import HowItWorks from "./Components/landingPage/how";
